@@ -18,6 +18,6 @@ jobs:
 - job: job2
   dependsOn: job1
   steps:
-  - script: job 2 echo Hello, world!
+  - script:  echo job 2 Hello, world!
     displayName: 'Run a one-line script'
 
