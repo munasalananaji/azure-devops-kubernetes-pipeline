@@ -27,14 +27,14 @@ stages:
   - job: job2
     steps:
     - bash: echo printing the second job from integration    
-- stage: integration
-  dependsOn: QA
+- stage: QA
+  dependsOn: integration
   jobs:
   - job: job1
     steps:
     - bash: echo printing the first job from QA
-- stage: integration
-  dependsOn: PROD
+- stage: prod
+  dependsOn: QA
   jobs:
   - job: job1
     steps:
