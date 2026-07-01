@@ -12,11 +12,11 @@ pool:
 jobs:
 - job: job1 
   steps:
-  - script: job 1 echo Hello, world!
+  - script: echo job1 Hello, world!
     displayName: 'Run a one-line script'
 
 - job: job2
-  dependsOn: Job1
+  dependsOn: job1
   steps:
   - script: job 2 echo Hello, world!
     displayName: 'Run a one-line script'
