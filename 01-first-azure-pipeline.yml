@@ -10,11 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 jobs:
-- job: job1 
+- job: job1
   steps:
-  - script: job 1 echo Hello, world!
-    displayName: 'Run a one-line script'
-- job: job2 
+  - script: echo "Job 1 - Hello, world!"
+    displayName: 'Run Job 1'
+
+- job: job2
   steps:
-  - script: job 1 echo Hello, world!
-    displayName: 'Run a one-line script'
+  - script: echo "Job 2 - Hello, world!"
+    displayName: 'Run Job 2'
